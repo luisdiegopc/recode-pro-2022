@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Agência RECO</title>
+    <style> 
+
+    .section {
+	position: relative;
+	height: 500px;
+}
+
+.section .section-center {
+	position: absolute;
+	top: 3%;
+	left: 0;
+	right: 0;
+
+}
+
+
+
+#booking::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.6);
+}
+
+.booking-form {
+	/* max-width: 586px; */
+	width: 100%;
+	margin: auto;
+}
+
+.booking-form .form-header {
+	text-align: center;
+	margin-bottom: 25px;
+}
+
+.booking-form .form-header h3 {
+	font-size: 42px;
+	color: #fff;
+	margin-top: 50px;
+	margin-bottom: 0px;
+	font-weight: 700;
+	text-transform: capitalize;
+}
+
+.booking-form>form {
+	background-color: #1e1e1e;
+	padding: 40px;
+	-webkit-box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.8);
+}
+
+.booking-form .form-group {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.booking-form .form-control {
+	background-color: #2d2d2d;
+	height: 50px;
+	padding: 0px 20px;
+	border: none;
+	-webkit-box-shadow: none;
+	box-shadow: none;
+	border-radius: 0px;
+	color: #fff;
+}
+
+.booking-form .form-control::-webkit-input-placeholder {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.booking-form .form-control:-ms-input-placeholder {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.booking-form .form-control::placeholder {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.booking-form input[type="date"].form-control:invalid {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.booking-form select.form-control {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.booking-form select.form-control+.select-arrow {
+	position: absolute;
+	right: 6px;
+	bottom: 6px;
+	width: 32px;
+	line-height: 32px;
+	height: 32px;
+	text-align: center;
+	pointer-events: none;
+	color: #fff;
+	font-size: 14px;
+}
+
+.booking-form select.form-control+.select-arrow:after {
+	content: '\279C';
+	display: block;
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+.booking-form .form-label {
+	color: #fff;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 5px;
+	display: inline-block;
+	letter-spacing: 0.4px;
+}
+
+.booking-form .submit-btn {
+	color: #fff;
+	background-color: #0B5ED7;
+	font-weight: 400;
+	height: 50px;
+	border: none;
+	width: 100%;
+	display: block;
+	letter-spacing: 0.4px;
+}
+    </style>
+  </head>
+  <body>
+
+    <div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+				<div class="row">
+					<div class="booking-form">
+						<div class="form-header">
+							<h3>Faça sua reserva</h3>
+						</div>
+						<form>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Check In</span>
+										<input class="form-control" type="date" required>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group">
+										<span class="form-label">Check out</span>
+										<input class="form-control" type="date" required>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group">
+										<span class="form-label">Número de Quartos</span>
+										<select class="form-control">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span class="form-label">Adultos</span>
+										<select class="form-control">
+											<option>1</option>
+											<option>2</option>
+											<option>3</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="form-group">
+										<span class="form-label">Crianças</span>
+										<select class="form-control">
+											<option>0</option>
+											<option>1</option>
+											<option>2</option>
+										</select>
+										<span class="select-arrow"></span>
+									</div>
+								</div>
+							</div>
+							<div class="form-btn" style="width:300px; margin: 0 auto; ">
+								<button class="submit-btn" >Verificar Disponibilidade</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+    <!---   --------------------------------------------------    -->
+    <div class=""> 
+        <nav class=" navbar  fixed-top navbar-expand-lg navbar-dark " style="  z-index: 999 ; font-size:18px ;background-color:  #FF5722 ; ;font-weight:500 ; " >
+            <div class="container-fluid ">
+             <a class="navbar-brand" href="#">Agência <b>RECO</b></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav ">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="destinos.html">Destinos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="promocoes.html">Promoções</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contato.html">Contato</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="quemsomos.html">Quem somos </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+        </nav> <!--**FIM NAVBAR **-->
+        <div class="col-11 m-auto" style="padding-bottom:30px; padding-top: 60px;">
+                <!--** CARROUSEL **--> 
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/beach.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/park.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/friends.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+                </div>        
+            <!--** FIM CARROUSEL **-->
+            <hr>
+            <!--** CARDS **-->
+                <div class="text-center" style="padding-bottom:15px; font-weight: bold;"><h2>O que dizem nossos clientes</h2></div> 
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/images/abandoned-plane-in-sunflower-field.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Topzera</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+
+                                <!-- Button trigger modal -->
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    Clique Aqui 
+                                </button>
+                                
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Viajem 1</h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Mussum Ipsum, cacilds vidis litro abertis. Paisis, filhis, espiritis santis.Praesent malesuada urna nisi, quis volutpat erat hendrerit non. Nam vulputate dapibus.
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> <!-- FIM MODAL 1-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/images/family-feet.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cartão 02</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                
+                                <!-- modal -->
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                       Clique para acessar
+                                    </button>
+                                    
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                            <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                Mussum Ipsum, cacilds vidis litro abertis. Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose.Nec orci ornare consequat. Praesent lacinia ultrices consectetur.
+                                            </div>
+                                            <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                                            </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                    <!-- FIM MODAL 2-->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="assets/images/family-portrait.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Cartão 03</h5>
+                                <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <hr>
+                <div>
+                    <h3>Venha Conhecer</h3>
+                    <p>Mussum Ipsum, cacilds vidis litro abertis. Sapien in monti palavris qui num significa nadis i pareci latim.Suco de cevadiss deixa as pessoas mais interessantis.Copo furadis é disculpa de bebadis, arcu quam euismod magna.Suco de cevadiss, é um leite divinis, qui tem lupuliz, matis, aguis e fermentis.</p>
+                </div>
+                
+        </div> <!--** Sub- Geral **-->
+        <footer style="background-color: #333;" class=" p-3">
+            <p class="text-center" style= "color: white">© 2022 Todos os direitos reservados.</p>
+        </footer>
+    </div>   <!--** Sub- Geral **-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </body>
+</html>
+
